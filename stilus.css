@@ -8,6 +8,7 @@ img{
 article{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-area: a;
 }
 
 body{
@@ -42,6 +43,20 @@ a{
     text-decoration: none;
 }
 
+section{
+    grid-area: s;
+    background-color: white;
+}
+
+footer{
+    grid-area: f;
+    background-color: white;
+}
+
+nav{
+    grid-area: n;
+}
+
 h3{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -50,6 +65,15 @@ h3{
 p{
     margin-top: 0px;
     margin-bottom: 30px;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+    'n n n n n'
+    'a a a a s'
+    'f f f f f'
+    ;
 }
 
 @media screen and (max-width:1350px){
